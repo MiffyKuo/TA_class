@@ -1,0 +1,54 @@
+nav a {
+    color: inherit; /* 移除超連結顏色 */
+    text-decoration: none; /* 移除超連結底線 */
+    display: block; /* 讓 <a> 填滿 <li> */
+    padding: 10px;
+    
+}
+
+nav > ul {
+    list-style: none; /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+}
+
+.header {
+    background-color: yellow;
+    width: 100%;
+    height: 48px;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.left {
+    width: 320px;
+    top: 48px;
+    left: 0;
+    height: 50%;
+    border-right: 1px salmon;
+    background-color: hsl(160, 60%, 79%);
+    position: fixed;
+}
+
+.right {
+    top: 48px;
+    right: 0;
+    bottom: 0;
+    left: 321px;
+    overflow-y: auto;
+    background-color: violet;
+    position: absolute;
+    height: 1000px;
+}
+
+body {
+    margin: 0;
+}
